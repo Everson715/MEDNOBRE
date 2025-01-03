@@ -1,29 +1,36 @@
-ESTOQUE_MEDNOBRE/
-│
+medical_inventory_system/
 ├── backend/
 │   ├── app/
-│   │   ├── models.py          # Modelos do banco de dados (ORM)
+│   │   ├── __init__.py        # Inicialização do Flask
+│   │   ├── models.py          # Modelos do banco de dados
 │   │   ├── routes.py          # Rotas da API
-│   │   ├── __init__.py        # Inicialização do backend
 │   │   └── utils.py           # Funções auxiliares
 │   ├── database/
-│   │   ├── setup.sql          # Script de criação do banco de dados
-│   └── config.py              # Configuração do backend
+│   │   └── setup.sql          # Script SQL para criação do banco
+│   ├── config.py              # Configurações do Flask
+│   └── run.py                 # Arquivo principal para iniciar o backend
 │
 ├── frontend/
 │   ├── public/                # Arquivos estáticos
+│   │   └── index.html         # HTML principal
 │   ├── src/
-│   │   ├── components/        # Componentes do React
-│   │   ├── pages/             # Páginas do sistema
-│   │   ├── App.js             # Arquivo principal do frontend
+│   │   ├── components/        # Componentes React
+│   │   │   ├── Navbar.js      # Barra de navegação
+│   │   │   ├── ItemTable.js   # Tabela de itens
+│   │   │   └── ItemForm.js    # Formulário para itens
+│   │   ├── pages/             # Páginas principais
+│   │   │   ├── Dashboard.js   # Página inicial
+│   │   │   └── Transactions.js # Página de transações
+│   │   ├── App.js             # Arquivo principal do React
 │   │   └── index.js           # Ponto de entrada do React
 │   ├── package.json           # Dependências do frontend
-│   └── tailwind.config.js     # Configuração do TailwindCSS
+│   └── tailwind.config.js     # Configuração opcional do Tailwind
 │
 ├── docs/
-│   ├── README.md              # Manual do projeto
+│   ├── README.md              # Documentação principal
+│   ├── guia_ambiente_local.md # Guia de instalação local
 │   ├── DER.pdf                # Diagrama Entidade-Relacionamento
-│   └── guia_ambiente_local.md # Guia para configuração do ambiente
+│   └── manual_usuario.pdf     # Manual do usuário final
 │
-├── docker-compose.yml         # Configuração do Docker
-└── README.md                  # Apresentação geral do projeto
+├── .gitignore                 # Arquivos ignorados pelo Git
+└── docker-compose.yml         # Configuração Docker (opcional)
