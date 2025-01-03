@@ -1,0 +1,29 @@
+ESTOQUE_MEDNOBRE/
+│
+├── backend/
+│   ├── app/
+│   │   ├── models.py          # Modelos do banco de dados (ORM)
+│   │   ├── routes.py          # Rotas da API
+│   │   ├── __init__.py        # Inicialização do backend
+│   │   └── utils.py           # Funções auxiliares
+│   ├── database/
+│   │   ├── setup.sql          # Script de criação do banco de dados
+│   └── config.py              # Configuração do backend
+│
+├── frontend/
+│   ├── public/                # Arquivos estáticos
+│   ├── src/
+│   │   ├── components/        # Componentes do React
+│   │   ├── pages/             # Páginas do sistema
+│   │   ├── App.js             # Arquivo principal do frontend
+│   │   └── index.js           # Ponto de entrada do React
+│   ├── package.json           # Dependências do frontend
+│   └── tailwind.config.js     # Configuração do TailwindCSS
+│
+├── docs/
+│   ├── README.md              # Manual do projeto
+│   ├── DER.pdf                # Diagrama Entidade-Relacionamento
+│   └── guia_ambiente_local.md # Guia para configuração do ambiente
+│
+├── docker-compose.yml         # Configuração do Docker
+└── README.md                  # Apresentação geral do projeto
